@@ -13,7 +13,7 @@ function formatDate(date) {
     if (minDiff < 60) {
         return `${minDiff} мин. назад`
     } 
-    
+
     return fullDate();
 }
 
@@ -32,7 +32,7 @@ const fullDate = () => {
 
   //функция добавления 0 к месяцу
   const addZeroToMonth = () => {
-    const month= (new Date().getMonth()+1);
+    const month= new Date().getMonth()+1;
     if (month < 10){
       return `0${month}`
     } else {
